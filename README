@@ -1,0 +1,12 @@
+tc-maven-repo
+--
+http://tommy.chheng.com
+
+Add to your pom.xml:
+<repositories>
+    <repository>
+        <id>tc-maven-repo</id>
+        <url>http://github.com/tc/tc-maven-repo/raw/master/releases</url>
+    </repository>
+</repositories>
+
