@@ -10,3 +10,7 @@ Add to your pom.xml:
     </repository>
 </repositories>
 
+
+To deploy a third party jar:
+mvn deploy:deploy-file -Durl=file:PATH_TO_LOCAL/src/tc-maven-repo/releases -Dfile=lamejb-0.2.0.jar -DgroupId=net.sf -DartifactId=lamejb -Dversion=0.2.0 -Dpackaging=jar
+
