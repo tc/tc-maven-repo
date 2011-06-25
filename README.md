@@ -1,6 +1,7 @@
 #tc-maven-repo
 http://tommy.chheng.com
 
+## Getting Started
 Add to your pom.xml:
 
 ```
@@ -12,7 +13,16 @@ Add to your pom.xml:
 </repositories>
 ```
 
-To deploy a third party jar:
+## Recent artifacts
+```
+    <dependency>
+      <groupId>com.jimplush</groupId>
+      <artifactId>goose</artifactId>
+      <version>1.4.1</version>
+    </dependency>
+```
+
+## To deploy a third party jar:
 ```
 mvn deploy:deploy-file -Durl=file:PATH_TO_LOCAL/src/tc-maven-repo/releases -Dfile=lamejb-0.2.0.jar -DgroupId=net.sf -DartifactId=lamejb -Dversion=0.2.0 -Dpackaging=jar
 ```
